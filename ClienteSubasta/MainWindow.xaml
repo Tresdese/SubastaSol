@@ -1,0 +1,51 @@
+﻿<Window x:Class="ClienteSubasta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClienteSubasta"
+        mc:Ignorable="d"
+        Title="Sala de subastas" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="Blue" CornerRadius="5" Padding="15" Margin="0,0,0,15">
+            <StackPanel>
+                <TextBlock Text="Oferta especial maxima" FontSize="12" Foreground="Beige" HorizontalAlignment="Center" FontWeight="Bold" />
+                <TextBlock x:Name="txtLiderSubasta" Text="Esperando inicio de la subasta" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="0,0,0,15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Historial de sala" FontSize="12" Foreground="Gray" Margin="0,0,0,5"/>
+            <TextBox x:Name="txtNotificaciones" Grid.Row="1" IsReadOnly="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Background="White" Padding="0" FontSize="13" BorderBrush="Black"/>
+            
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="txtOferta" Grid.Column="0" FontSize="16" Padding="6" VerticalAlignment="Center" Margin="0,0,10,0" BorderBrush="White" Height="38" VerticalContentAlignment="Center"/>
+
+            <Button Name="btnSubastar" Grid.Column="1" Content="Enviar oferta" Width="120" Height="38" Background="DarkGreen" Foreground="White" FontSize="14" FontWeight="Bold" Click="btnSubastar_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="8"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,7 @@
+D:\Proyectos de tecnologias\Subasta\SubastaWCF\bin\SubastaWCF.dll.config
+D:\Proyectos de tecnologias\Subasta\SubastaWCF\bin\SubastaWCF.dll
+D:\Proyectos de tecnologias\Subasta\SubastaWCF\bin\SubastaWCF.pdb
+D:\Proyectos de tecnologias\Subasta\SubastaWCF\obj\Debug\SubastaWCF.csproj.AssemblyReference.cache
+D:\Proyectos de tecnologias\Subasta\SubastaWCF\obj\Debug\SubastaWCF.csproj.CoreCompileInputs.cache
+D:\Proyectos de tecnologias\Subasta\SubastaWCF\obj\Debug\SubastaWCF.dll
+D:\Proyectos de tecnologias\Subasta\SubastaWCF\obj\Debug\SubastaWCF.pdb

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ClienteSubasta/ClienteSubasta.csproj" />
+  <Project Path="SubastaWCF/SubastaWCF.csproj" Id="6dcf487f-f613-41dd-aead-f5ce87cf9312" />
+</Solution>
