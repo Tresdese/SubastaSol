@@ -37,7 +37,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="txtOferta" Grid.Column="0" FontSize="16" Padding="6" VerticalAlignment="Center" Margin="0,0,10,0" BorderBrush="White" Height="38" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtMiOferta" Grid.Column="0" FontSize="16" Padding="6" VerticalAlignment="Center" Margin="0,0,10,0" BorderBrush="White" Height="38" VerticalContentAlignment="Center"/>
 
             <Button Name="btnSubastar" Grid.Column="1" Content="Enviar oferta" Width="120" Height="38" Background="DarkGreen" Foreground="White" FontSize="14" FontWeight="Bold" Click="btnSubastar_Click">
                 <Button.Resources>

@@ -22,7 +22,7 @@ namespace SubastaWCF
         {
             ISubastaCallback callback = OperationContext.Current.GetCallbackChannel<ISubastaCallback>();
 
-            if (clientesConectados.Contains(callback))
+            if (!clientesConectados.Contains(callback))
             {
                 clientesConectados.Add(callback);
             }
@@ -36,12 +36,13 @@ namespace SubastaWCF
             {
                 ofertaMaximaActual = montoOferta;
                 liderActual = nombreUsuario;
-                string mensajeHIstorial = $"Nueva oferta maxima de {nombreUsuario} por el monto {montoOferta}";
+                string mensajeHistorial = $"Nueva oferta maxima de {nombreUsuario} por el monto {montoOferta}";
                 foreach (var cliente in clientesConectados) {
                     try
                     {
+                        Console.WriteLine("si funciona");
                         cliente.NotificarNuevaOfertaMax(nombreUsuario, montoOferta);
-                        cliente.MensajeDelSistema(mensajeHIstorial);
+                        cliente.MensajeDelSistema(mensajeHistorial);
                     } catch (Exception ex)
                     {
                         Console.WriteLine(ex.Message);

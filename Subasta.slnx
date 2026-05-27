@@ -1,5 +1,4 @@
 <Solution>
-  <Project Path="ClienteSubasta/ClienteSubasta.csproj" />
   <Project Path="ClienteSubastaNet/ClienteSubastaNet.csproj" Id="9330317d-35b4-4c6f-b5af-7ca41307f550">
     <BuildDependency Project="SubastaWCF/SubastaWCF.csproj" />
   </Project>
