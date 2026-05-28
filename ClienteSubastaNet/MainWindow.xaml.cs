@@ -27,10 +27,11 @@ namespace ClienteSubastaNet
     {
 
         private SubastaServicioClient conexion;
-        private string nombre = "Cliente_1";
-        public MainWindow()
+        private string nombre;
+        public MainWindow(string nombreDeUsuario)
         {
             InitializeComponent();
+            nombre = nombreDeUsuario;
             ConectarAlServidor();
         }
 

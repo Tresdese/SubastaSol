@@ -2,10 +2,12 @@ D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\bin\Debug\ClienteSubastaNe
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\bin\Debug\ClienteSubastaNet.exe
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\bin\Debug\ClienteSubastaNet.pdb
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\ClienteSubastaNet.csproj.AssemblyReference.cache
+D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\InicioDeSesion.g.cs
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\MainWindow.g.cs
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\App.g.cs
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\ClienteSubastaNet_MarkupCompile.cache
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\ClienteSubastaNet_MarkupCompile.lref
+D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\InicioDeSesion.baml
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\MainWindow.baml
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\ClienteSubastaNet.g.resources
 D:\Proyectos de tecnologias\Subasta\ClienteSubastaNet\obj\Debug\ClienteSubastaNet.Properties.Resources.resources

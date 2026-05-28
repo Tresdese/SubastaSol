@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClienteSubastaNet.InicioSesionServicio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,9 @@ namespace ClienteSubastaNet
     /// </summary>
     public partial class InicioDeSesion : Window
     {
+        private InicioSesionServicioClient cliente = new InicioSesionServicioClient();
+        private string nombre = "";
+
         public InicioDeSesion()
         {
             InitializeComponent();
@@ -26,7 +30,35 @@ namespace ClienteSubastaNet
 
         private void btnEntrar_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                string nombreUsuario = txtNombreUsuario.Text;
+                Task.Run(() => {
+                    bool sesionIniciada = cliente.IniciarSesion(nombreUsuario);
+                    IrSubasta(nombreUsuario, sesionIniciada);
+                });
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
 
+        private void IrSubasta(string nombreDeUsuario, bool haySesion)
+        {
+            Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+            {
+                if (haySesion)
+                {
+                    MainWindow ventanaSubasta = new MainWindow(nombreDeUsuario);
+                    ventanaSubasta.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("El nombre ya esta en uso.");
+                    txtNombreUsuario.Clear();
+                }
+            }));
         }
     }
 }

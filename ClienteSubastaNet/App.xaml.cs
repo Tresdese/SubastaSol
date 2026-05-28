@@ -13,5 +13,6 @@ namespace ClienteSubastaNet
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

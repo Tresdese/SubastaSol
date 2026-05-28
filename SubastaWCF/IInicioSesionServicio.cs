@@ -12,13 +12,10 @@ namespace SubastaWCF
     public interface IInicioSesionServicio
     {
         [OperationContract]
-        void IniciarSesion(string nombreUsuario);
-
-        [OperationContract]
-        void GuardarNombre(string nombreUsuario);
+        bool IniciarSesion(string nombreUsuario);
 
         [OperationContract]
 
-        void VerificarNombre(string nombreUsuario);
+        bool VerificarNombre(string nombreUsuario);
     }
 }

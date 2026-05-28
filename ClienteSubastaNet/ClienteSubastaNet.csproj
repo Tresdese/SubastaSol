@@ -69,6 +69,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Connected Services\InicioSesionServicioCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\InicioSesionServicio\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\SubastaServicioRemoto\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +110,20 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Connected Services\InicioSesionServicioCliente\InicioSesionServicio.wsdl" />
+    <None Include="Connected Services\InicioSesionServicioCliente\InicioSesionServicio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\InicioSesionServicioCliente\InicioSesionServicio1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\InicioSesionServicio\InicioSesionServicio.wsdl" />
+    <None Include="Connected Services\InicioSesionServicio\InicioSesionServicio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\InicioSesionServicio\InicioSesionServicio1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\SubastaServicioRemoto\SubastaServicio.wsdl" />
     <None Include="Connected Services\SubastaServicioRemoto\SubastaServicio.xsd">
       <SubType>Designer</SubType>
@@ -119,6 +143,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\InicioSesionServicioCliente\" />
+    <WCFMetadataStorage Include="Connected Services\InicioSesionServicio\" />
     <WCFMetadataStorage Include="Connected Services\SubastaServicioRemoto\" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +158,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\SubastaServicioRemoto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicioCliente\InicioSesionServicio.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicioCliente\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicioCliente\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicioCliente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicio\InicioSesionServicio.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicio\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicio\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InicioSesionServicio\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
